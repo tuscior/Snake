@@ -138,17 +138,5 @@ function mapAndFood(){
 	}
 }
 function drawEnd(){
-	space = true;
-	Game.ctx.font = "35px Garamond";
-	Game.ctx.fillText("Game over", 50, 100);
-	Game.ctx.fillText('Press space to restart', 100, 100);
-
-	if (space){
-		window.addEventListener('keydown', function(event){
-		
-		if(event.key === " " && space){
-		
-		}
-	});
-}
+location.reload();
 }
